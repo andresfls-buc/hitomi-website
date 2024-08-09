@@ -39,4 +39,21 @@ document.addEventListener("DOMContentLoaded", function () {
       closeMenu();
     }
   });
+
+  // Close the dropdown menu when clicking on a list item
+  document.querySelectorAll("#dropdownContent li").forEach(function (item) {
+    item.addEventListener("click", function () {
+      closeMenu();
+    });
+  });
+
+  // Close the dropdown menu when clicking outside of it
+  document.addEventListener("click", function (event) {
+    if (
+      !dropdownContent.contains(event.target) &&
+      !event.target.closest(".hamburger")
+    ) {
+      closeMenu();
+    }
+  });
 });
