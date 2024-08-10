@@ -8,8 +8,9 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+/* Navbar Styling */
 .navbar-container {
-  background-color: #f2f2f2;
+  background-color: #f0ece2; /* Updated color */
   width: 100%;
 }
 
@@ -30,7 +31,7 @@ body {
 }
 
 .logo {
-  color: rosybrown;
+  color: #c7b198; /* Updated color */
   font-size: 24px;
   text-decoration: none;
   font-weight: bold;
@@ -47,12 +48,8 @@ body {
   gap: 10px;
 }
 
-.nav-menu ul li {
-  margin-left: 10px;
-}
-
 .nav-menu ul li a {
-  color: rosybrown;
+  color: #596e79; /* Updated color */
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -61,8 +58,8 @@ body {
 }
 
 .nav-menu ul li a:hover {
-  background-color: #ddd;
-  color: #333;
+  background-color: #dfd3c3; /* New color for hover effect */
+  color: #113f67; /* Darker color for text on hover */
 }
 
 /* Dropdown Menu */
@@ -72,7 +69,7 @@ body {
   top: 100%;
   left: 0;
   width: 100%;
-  background-color: rosybrown;
+  background-color: #f0ece2; /* Updated color */
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
   z-index: 1000;
   padding: 0;
@@ -90,7 +87,7 @@ body {
 }
 
 .dropdown-content ul li a {
-  color: #f2f2f2;
+  color: #596e79; /* Updated color */
   padding: 14px 16px;
   text-decoration: none;
   display: block;
@@ -99,15 +96,15 @@ body {
 }
 
 .dropdown-content ul li a:hover {
-  background-color: #ddd;
-  color: #333;
+  background-color: #dfd3c3; /* New color for hover effect */
+  color: #113f67; /* Darker color for text on hover */
 }
 
 .dropdown-content.show {
   display: block;
 }
 
-/* Initial styles for the hamburger and close icons */
+/* Hamburger Icon */
 .hamburger {
   display: none;
   font-size: 2rem;
@@ -133,9 +130,10 @@ body {
   display: inline;
 }
 
+/* About Section */
 .about-section {
-  padding: 60px 20px;
-  background-color: #f8f9fa;
+  background-color: #dfd3c3; /* Updated color */
+  padding: 50px 0;
 }
 
 .container {
@@ -146,62 +144,128 @@ body {
 
 .about-content {
   display: flex;
-  align-items: flex-start;
-  gap: 20px; /* Space between image and text */
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
 }
 
 .about-image {
-  flex-shrink: 0; /* Prevent image from shrinking */
+  flex: 1;
 }
 
 .about-image img {
-  width: 100%;
-  max-width: 400px;
-  border-radius: 8px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .about-text {
-  flex: 1; /* Text takes up remaining space */
+  flex: 2;
 }
 
 .about-text h2 {
   font-size: 2.5rem;
-  color: #333;
   margin-bottom: 20px;
 }
 
 .about-text p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  color: #555;
+  font-size: 1.2rem;
+  color: black;
   margin-bottom: 20px;
 }
 
 .about-text ul {
-  list-style: none;
-  padding: 0;
-  margin: 20px 0;
+  list-style: disc;
+  padding-left: 20px;
 }
 
 .about-text ul li {
-  font-size: 1.1rem;
-  color: #555;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
 }
 
 .btn {
   display: inline-block;
   padding: 10px 20px;
-  font-size: 1rem;
-  text-decoration: none;
-  border-radius: 4px;
+  background-color: #c7b198; /* Updated color */
   color: #fff;
-  background-color: #007bff;
-  transition: background-color 0.3s;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1rem;
 }
 
 .btn:hover {
-  background-color: #0056b3;
+  background-color: #596e79; /* Darker color for hover effect */
+}
+
+/* Services Section Styling */
+#services {
+  padding: 50px 20px;
+  background-color: #f0ece2; /* Background color */
+  text-align: center;
+}
+
+#services h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap onto new lines */
+  gap: 20px; /* Space between items */
+  max-width: 1200px; /* Ensure container width */
+  margin: 0 auto; /* Center the container */
+  padding: 0; /* Remove padding */
+}
+
+.service-item {
+  flex: 1 1 calc(50% - 20px); /* Two columns layout with gap consideration */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  text-align: center; /* Center text inside items */
+  background: #fff; /* Background color for service items */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 500px; /* Limit width of service items */
+  margin: 0 auto; /* Center items horizontally */
+}
+
+.service-image {
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.service-content {
+  max-width: 600px;
+  margin: 0 auto; /* Center content within service-item */
+}
+
+.service-item h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.service-item p {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.service-item .btn {
+  font-size: 1rem;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #c7b198; /* Updated color */
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.service-item .btn:hover {
+  background-color: #596e79; /* Darker color for hover effect */
 }
 
 /* Media query for mobile devices */
@@ -261,5 +325,35 @@ body {
   .btn {
     font-size: 0.9rem;
     padding: 8px 16px;
+  }
+
+  .services-container {
+    flex-direction: column; /* Stack items in a single column */
+    gap: 10px; /* Space between items on small screens */
+  }
+
+  .service-item {
+    flex: 1 1 100%; /* Full width on small screens */
+    margin: 10px auto; /* Center items and add spacing */
+  }
+}
+
+/* Media query for screens between 770px and 1024px */
+@media (min-width: 769px) {
+  .service-item {
+    margin: 10px auto; /* Center items horizontally */
+  }
+}
+
+/* Media query for screens 550px or smaller */
+@media (max-width: 550px) {
+  .services-container {
+    flex-direction: column; /* Single column layout */
+    gap: 10px; /* Space between items */
+    padding: 0 10px; /* Add padding to avoid edge-to-edge layout */
+  }
+
+  .service-item {
+    margin: 10px auto; /* Center items horizontally */
   }
 }
