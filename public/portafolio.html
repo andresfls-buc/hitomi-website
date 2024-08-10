@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/public/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Portafolio</title>
+  </head>
+  <body>
+    <div class="navbar-container">
+      <nav class="navbar">
+        <div class="left-section">
+          <a href="#" class="logo">Hitomi</a>
+        </div>
+        <div class="nav-menu">
+          <ul id="nav-links">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/index.html#about">About</a></li>
+            <li><a href="/index.html#services">Services</a></li>
+            <li><a href="/public/portafolio.html">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <button class="hamburger" onclick="toggleMenu()">
+          <i class="fa-solid fa-bars icon-hamburger"></i>
+          <i class="fa-solid fa-xmark icon-close"></i>
+        </button>
+        <div class="dropdown-content" id="dropdownContent">
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/index.html#about">About</a></li>
+            <li><a href="/index.html#services">Services</a></li>
+            <li><a href="/public/portafolio.html">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
