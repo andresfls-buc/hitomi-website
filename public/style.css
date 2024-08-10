@@ -211,61 +211,27 @@ body {
   margin-bottom: 40px;
 }
 
-.services-container {
-  display: flex;
-  flex-wrap: wrap; /* Allow items to wrap onto new lines */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 20px; /* Space between items */
-  max-width: 1200px; /* Ensure container width */
-  margin: 0 auto; /* Center the container */
-  padding: 0; /* Remove padding */
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .service-item {
-  flex: 1 1 calc(50% - 20px); /* Two columns layout with gap consideration */
-  box-sizing: border-box; /* Include padding and border in the element's total width and height */
-  text-align: center; /* Center text inside items */
-  background: #fff; /* Background color for service items */
+  background: #fff;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 500px; /* Limit width of service items */
-  margin: 0 auto; /* Center items horizontally */
+  text-align: center;
 }
 
-.service-image {
+.service-item img {
   width: 100%;
-  max-width: 300px;
-  margin-bottom: 20px;
+  height: auto;
   border-radius: 10px;
-}
-
-.service-content {
-  max-width: 600px;
-  margin: 0 auto; /* Center content within service-item */
-}
-
-.service-item h3 {
-  font-size: 1.8rem;
-  margin-bottom: 15px;
-}
-
-.service-item p {
-  font-size: 1rem;
-  color: #333;
   margin-bottom: 20px;
-}
-
-.service-item .btn {
-  font-size: 1rem;
-  padding: 10px 20px;
-  color: #fff;
-  background-color: #c7b198; /* Updated color */
-  border-radius: 5px;
-  text-decoration: none;
-}
-
-.service-item .btn:hover {
-  background-color: #596e79; /* Darker color for hover effect */
 }
 
 /* Media query for mobile devices */
@@ -327,33 +293,55 @@ body {
     padding: 8px 16px;
   }
 
-  .services-container {
-    flex-direction: column; /* Stack items in a single column */
+  .services-grid {
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* Two columns layout on small screens */
     gap: 10px; /* Space between items on small screens */
   }
 
   .service-item {
-    flex: 1 1 100%; /* Full width on small screens */
     margin: 10px auto; /* Center items and add spacing */
+  }
+
+  .service-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
   }
 }
 
 /* Media query for screens between 770px and 1024px */
-@media (min-width: 769px) {
+@media (min-width: 769px) and (max-width: 1024px) {
   .service-item {
     margin: 10px auto; /* Center items horizontally */
+  }
+
+  .service-item img {
+    width: 100%;
+    height: auto;
   }
 }
 
 /* Media query for screens 550px or smaller */
 @media (max-width: 550px) {
-  .services-container {
-    flex-direction: column; /* Single column layout */
+  .services-grid {
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* Two columns layout on very small screens */
     gap: 10px; /* Space between items */
     padding: 0 10px; /* Add padding to avoid edge-to-edge layout */
   }
 
   .service-item {
     margin: 10px auto; /* Center items horizontally */
+  }
+
+  .service-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
   }
 }
