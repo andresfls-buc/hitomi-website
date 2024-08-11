@@ -213,10 +213,11 @@ body {
 
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(2, 1fr); /* Always 2 columns */
   gap: 20px; /* Space between items */
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 20px; /* Add padding for better spacing */
 }
 
 .service-item {
@@ -225,6 +226,7 @@ body {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
+  margin: 0 auto; /* Center items */
 }
 
 .service-item img {
@@ -232,6 +234,42 @@ body {
   height: auto;
   border-radius: 10px;
   margin-bottom: 20px;
+}
+
+#portafolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 0 20px; /* Top padding ensures the content is spaced from the navbar */
+  background-color: #dfd3c3;
+  width: 100%;
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+#portafolio h1 {
+  margin-bottom: 20px; /* Space between the h1 and the carousel */
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-container {
+  border-radius: 10px;
+  max-width: 80%; /* Adjust the width as needed */
+  margin: 0 auto; /* Center the carousel */
+}
+
+.carousel-inner img {
+  border-radius: 10px; /* Optional: Apply the same border-radius to images */
 }
 
 /* Media query for mobile devices */
@@ -294,54 +332,46 @@ body {
   }
 
   .services-grid {
-    grid-template-columns: repeat(
-      2,
-      1fr
-    ); /* Two columns layout on small screens */
-    gap: 10px; /* Space between items on small screens */
+    grid-template-columns: repeat(2, 1fr); /* Two columns layout */
+    grid-template-rows: repeat(2, auto); /* Two rows layout */
+    gap: 10px; /* Smaller gap between items */
+    padding: 0 10px; /* Adjust padding for smaller devices */
   }
 
   .service-item {
-    margin: 10px auto; /* Center items and add spacing */
+    padding: 15px; /* Adjust padding for smaller screens */
+    margin: 10px auto; /* Center items with margin */
   }
 
   .service-item img {
     max-width: 100%;
     height: auto;
     margin-bottom: 10px;
+  }
+
+  .carousel-container {
+    max-width: 90%; /* Slightly wider on smaller screens */
+  }
+
+  #portafolio {
+    padding: 60px 10px 20px; /* Adjust padding for smaller devices */
+  }
+
+  #portafolio h1 {
+    font-size: 2rem; /* Reduce the font size on smaller screens */
   }
 }
 
 /* Media query for screens between 770px and 1024px */
 @media (min-width: 769px) and (max-width: 1024px) {
   .service-item {
-    margin: 10px auto; /* Center items horizontally */
+    padding: 20px;
   }
 
-  .service-item img {
-    width: 100%;
-    height: auto;
-  }
-}
-
-/* Media query for screens 550px or smaller */
-@media (max-width: 550px) {
   .services-grid {
-    grid-template-columns: repeat(
-      2,
-      1fr
-    ); /* Two columns layout on very small screens */
-    gap: 10px; /* Space between items */
-    padding: 0 10px; /* Add padding to avoid edge-to-edge layout */
-  }
-
-  .service-item {
-    margin: 10px auto; /* Center items horizontally */
-  }
-
-  .service-item img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
+    grid-template-columns: repeat(2, 1fr); /* Two columns layout */
+    grid-template-rows: repeat(2, auto); /* Two rows layout */
+    gap: 20px; /* Adjust gap for medium screens */
+    padding: 0 20px; /* Adjust padding for medium screens */
   }
 }
