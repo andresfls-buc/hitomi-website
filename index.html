@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="stylesheet" href="./public/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -31,7 +32,7 @@
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="/public/portafolio.html">Portfolio</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
         <button class="hamburger" onclick="toggleMenu()">
@@ -44,7 +45,7 @@
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="/public/portafolio.html">Portfolio</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
       </nav>
@@ -129,7 +130,7 @@
             class="service-image"
           />
           <div class="service-content">
-            <h3>Fashion Shoot Makeup</h3>
+            <h3>Rental Dress</h3>
             <p>
               Perfect your look for any fashion shoot with our experienced
               makeup artists. We specialize in enhancing your natural beauty for
@@ -170,8 +171,58 @@
             <a href="#" class="btn">Learn More</a>
           </div>
         </div>
+      </div>
+    </section>
 
-        <!-- Add more service items as needed -->
+    <section class="contact">
+      <div class="contact-container">
+        <form
+          action="https://api.web3forms.com/submit"
+          method="POST"
+          class="contact-left"
+        >
+          <div class="contact-left-title">
+            <a name="contact"></a>
+            <h2>Get in touch</h2>
+            <hr />
+          </div>
+          <input
+            type="hidden"
+            name="access_key"
+            value="5fda5187-9d79-420c-93c1-89c215f7bbb3"
+          />
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            class="contact-inputs"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            class="contact-inputs"
+            required
+          />
+
+          <!-- New select option -->
+          <select name="subject" class="contact-inputs" required>
+            <option value="" disabled selected>Select a subject</option>
+            <option value="inquiry">General Inquiry</option>
+            <option value="appointment">Appointment Request</option>
+            <option value="feedback">Feedback</option>
+            <option value="other">Other</option>
+          </select>
+
+          <textarea
+            name="message"
+            placeholder=""
+            class="contact-inputs"
+            required
+          ></textarea>
+          <button type="submit">Submit</button>
+        </form>
       </div>
     </section>
 

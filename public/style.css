@@ -272,6 +272,78 @@ body {
   border-radius: 10px; /* Optional: Apply the same border-radius to images */
 }
 
+.contact-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center contact form horizontally and vertically */
+  background-color: #efefee;
+}
+
+.contact-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center form elements horizontally */
+  gap: 20px;
+  max-width: 600px; /* Adjust the form size on large screens */
+  width: 100%; /* Ensure it is responsive */
+}
+
+.contact-left-title h2 {
+  font-weight: 600;
+  color: #f0c27b;
+  font-size: 40px;
+  margin-bottom: 5px;
+  text-align: center; /* Center title text */
+}
+
+.contact-left-title hr {
+  border: none;
+  width: 120px;
+  height: 5px;
+  background-color: #f0c27b;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.contact-inputs {
+  width: 100%; /* Adjust width for responsiveness */
+  height: 50px;
+  border: none;
+  outline: none;
+  padding-left: 25px;
+  font-weight: 500;
+  color: #666;
+  border-radius: 50px;
+}
+
+.contact-left textarea {
+  height: 140px;
+  padding-top: 15px;
+  border-radius: 20px;
+}
+
+.contact-inputs:focus {
+  border: 2px solid #8ab3e1;
+}
+
+.contact-inputs::placeholder {
+  color: #a9a9a9;
+}
+
+.contact-left button {
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+  font-size: 16px;
+  color: #fff;
+  gap: 10px;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(270deg, #ff994f, #fa6d86);
+  cursor: pointer;
+}
+
 /* Media query for mobile devices */
 @media (max-width: 768px) {
   .nav-menu {
@@ -360,6 +432,10 @@ body {
   #portafolio h1 {
     font-size: 2rem; /* Reduce the font size on smaller screens */
   }
+
+  .contact-inputs {
+    width: 80vw;
+  }
 }
 
 /* Media query for screens between 770px and 1024px */
@@ -373,5 +449,8 @@ body {
     grid-template-rows: repeat(2, auto); /* Two rows layout */
     gap: 20px; /* Adjust gap for medium screens */
     padding: 0 20px; /* Adjust padding for medium screens */
+  }
+  .contact-left {
+    max-width: 700px; /* Slightly larger form on larger screens */
   }
 }
