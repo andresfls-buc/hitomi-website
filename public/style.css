@@ -318,6 +318,7 @@ body {
 }
 
 .contact-left textarea {
+  font-family: Arial, Helvetica, sans-serif;
   height: 140px;
   padding-top: 15px;
   border-radius: 20px;
@@ -342,6 +343,17 @@ body {
   border-radius: 50px;
   background: linear-gradient(270deg, #ff994f, #fa6d86);
   cursor: pointer;
+}
+
+.instagram {
+  background-color: #dfd3c3;
+}
+.instagram h2 {
+  font-weight: 600;
+  color: black;
+  font-size: 40px;
+  margin-bottom: 5px;
+  text-align: center;
 }
 
 /* Media query for mobile devices */
