@@ -10,7 +10,7 @@ body {
 
 /* Navbar Styling */
 .navbar-container {
-  background-color: #f0ece2; /* Updated color */
+  background-color: #d2d4d6; /* Updated color */
   width: 100%;
 }
 
@@ -31,7 +31,7 @@ body {
 }
 
 .logo {
-  color: #c7b198; /* Updated color */
+  color: #7d8df6; /* Updated color */
   font-size: 24px;
   text-decoration: none;
   font-weight: bold;
@@ -49,7 +49,7 @@ body {
 }
 
 .nav-menu ul li a {
-  color: #596e79; /* Updated color */
+  color: #5a4db2; /* Updated color */
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -58,8 +58,8 @@ body {
 }
 
 .nav-menu ul li a:hover {
-  background-color: #dfd3c3; /* New color for hover effect */
-  color: #113f67; /* Darker color for text on hover */
+  background-color: #ff771b; /* New color for hover effect */
+  color: #d2d4d6; /* Lighter color for text on hover */
 }
 
 /* Dropdown Menu */
@@ -69,7 +69,7 @@ body {
   top: 100%;
   left: 0;
   width: 100%;
-  background-color: #f0ece2; /* Updated color */
+  background-color: #d2d4d6; /* Updated color */
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
   z-index: 1000;
   padding: 0;
@@ -87,7 +87,7 @@ body {
 }
 
 .dropdown-content ul li a {
-  color: #596e79; /* Updated color */
+  color: #5a4db2; /* Updated color */
   padding: 14px 16px;
   text-decoration: none;
   display: block;
@@ -96,8 +96,8 @@ body {
 }
 
 .dropdown-content ul li a:hover {
-  background-color: #dfd3c3; /* New color for hover effect */
-  color: #113f67; /* Darker color for text on hover */
+  background-color: #ff771b; /* New color for hover effect */
+  color: #d2d4d6; /* Lighter color for text on hover */
 }
 
 .dropdown-content.show {
@@ -132,7 +132,7 @@ body {
 
 /* About Section */
 .about-section {
-  background-color: #dfd3c3; /* Updated color */
+  background-color: #7d8df6; /* Updated color */
   padding: 50px 0;
 }
 
@@ -188,7 +188,7 @@ body {
 .btn {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #c7b198; /* Updated color */
+  background-color: #5a4db2; /* Updated color */
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
@@ -196,13 +196,13 @@ body {
 }
 
 .btn:hover {
-  background-color: #596e79; /* Darker color for hover effect */
+  background-color: #ff771b; /* New color for hover effect */
 }
 
 /* Services Section Styling */
 #services {
   padding: 50px 20px;
-  background-color: #f0ece2; /* Background color */
+  background-color: #d2d4d6; /* Updated background color */
   text-align: center;
 }
 
@@ -241,7 +241,7 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 100px 0 20px; /* Top padding ensures the content is spaced from the navbar */
-  background-color: #dfd3c3;
+  background-color: #7d8df6; /* Updated color */
   width: 100%;
   box-sizing: border-box; /* Ensures padding doesn't affect width */
 }
@@ -277,7 +277,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center; /* Center contact form horizontally and vertically */
-  background-color: #efefee;
+  background-color: #d2d4d6; /* Updated color */
 }
 
 .contact-left {
@@ -291,7 +291,7 @@ body {
 
 .contact-left-title h2 {
   font-weight: 600;
-  color: #f0c27b;
+  color: #5a4db2; /* Updated color */
   font-size: 40px;
   margin-bottom: 5px;
   text-align: center; /* Center title text */
@@ -301,7 +301,7 @@ body {
   border: none;
   width: 120px;
   height: 5px;
-  background-color: #f0c27b;
+  background-color: #5a4db2; /* Updated color */
   border-radius: 10px;
   margin-bottom: 20px;
 }
@@ -325,7 +325,7 @@ body {
 }
 
 .contact-inputs:focus {
-  border: 2px solid #8ab3e1;
+  border: 2px solid #7d8df6; /* Updated color */
 }
 
 .contact-inputs::placeholder {
@@ -341,12 +341,16 @@ body {
   gap: 10px;
   border: none;
   border-radius: 50px;
-  background: linear-gradient(270deg, #ff994f, #fa6d86);
+  background: linear-gradient(
+    270deg,
+    #ff771b,
+    #5a4db2
+  ); /* Gradient with one updated color */
   cursor: pointer;
 }
 
 .instagram {
-  background-color: #dfd3c3;
+  background-color: #7d8df6; /* Updated color */
 }
 .instagram h2 {
   font-weight: 600;
@@ -355,6 +359,128 @@ body {
   margin-bottom: 5px;
   text-align: center;
 }
+
+.instagram hr {
+  border: none;
+  width: 120px;
+  height: 5px;
+  background-color: black;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.instagram-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.instagram-flexbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.instagram-flexbox .flex-item {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.instagram-flexbox .flex-item:hover {
+  transform: scale(1.05);
+}
+
+.instagram-flexbox img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/*Footer starts*/
+footer {
+  background-color: #111;
+}
+.footerContainer {
+  width: 100%;
+  padding: 70px 30px 20px;
+}
+
+.socialIcons {
+  display: flex;
+  justify-content: center;
+}
+
+.socialIcons a {
+  text-decoration: none;
+  padding: 10px;
+  background-color: #fff;
+  margin: 10px;
+  border-radius: 50%;
+}
+
+.socialIcons a i {
+  font-size: 2em;
+  color: black;
+  opacity: 0.9;
+}
+
+/*Hoover Effect on social media Icons*/
+.socialIcons a:hover {
+  background-color: #000;
+  transition: 0.5s;
+}
+
+.socialIcons a:hover i {
+  color: #8ab3e1;
+  transition: 0.5s;
+}
+
+.footerNav {
+  margin: 30px 0;
+}
+
+.footerNav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+.footerNav ul li a {
+  color: #fff;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 1.3em;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+.footerNav ul li a:hover {
+  opacity: 1;
+  color: #8ab3e1;
+}
+
+.footerBottom {
+  background-color: #000;
+  padding: 20px;
+  text-align: center;
+}
+
+.footerBottom p {
+  color: white;
+}
+
+.designer {
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 1;
+  font-weight: 400;
+  margin: 0px 5px;
+}
+/*Footer ends*/
 
 /* Media query for mobile devices */
 @media (max-width: 768px) {
@@ -447,6 +573,16 @@ body {
 
   .contact-inputs {
     width: 80vw;
+  }
+
+  .footerNav ul {
+    flex-direction: column;
+  }
+
+  .footerNav ul li {
+    width: 100%;
+    text-align: center;
+    margin: 10px;
   }
 }
 
