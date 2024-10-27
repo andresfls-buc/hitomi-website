@@ -3,7 +3,7 @@
 
 **Website for a Hair and Makeup Artist**
 
-LINK TO THE WEBSITE: 
+LINK TO THE WEBSITE: https://andresfls-buc.github.io/hitomi-website/
 
 ## Overview
 
